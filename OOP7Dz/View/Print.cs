@@ -1,4 +1,5 @@
-﻿using OOP7Dz.Model;
+﻿using OOP7Dz.Entity;
+using OOP7Dz.Model;
 
 namespace OOP7Dz.View
 {
@@ -20,11 +21,34 @@ namespace OOP7Dz.View
         }
         public static void PrintClassLesson(ClassLesson classLesson)
         {
-            Console.WriteLine(classLesson + " Учитель - " + classLesson.Teacher.Name + " Придмет - " + classLesson.Lesson.ToString() + "\n Учиники: ");
+            Console.WriteLine(" Придмет класса - " + PrintLesson(classLesson.Lesson) + " Учитель - " + classLesson.Teacher.Name + "\n Учиники: ");
             foreach (Student student in classLesson.Students)
-            {
-                Console.WriteLine("Имя = "+ student.Name + " Лет" + student.Age + student.printSkill);
+            {                
+                student.printSkill();
             }
+        }
+
+        public static string PrintLesson(Lesson lesson )
+        {
+            switch (lesson)
+            {
+                case (Lesson)1:
+                    return "Математика";
+                case (Lesson)2:
+                    return "Русский";
+                case (Lesson)3:
+                    return "Гимнастика";
+                case (Lesson)4:
+                    return "История";
+                case (Lesson)5:
+                    return "География";
+
+               default: return "Не присовен придмет";
+            }
+           
+
+            
+
         }
     }
 }

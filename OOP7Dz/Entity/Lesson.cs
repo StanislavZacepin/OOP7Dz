@@ -2,13 +2,14 @@
 {
     public enum Lesson
     {
-        Math,//("Матиматика"),
-        Russian,//("Русский"),
-        Gymnastics,//("Гимнастика"),
-        History,//("История"),
-        Geography//("География");
-
+        Mathematics = 1,//("Математика"),
+        Russian = 2,//("Русский"),
+        Gymnastics = 3,//("Гимнастика"),
+        History = 4,//("История"),
+        Geography = 5//("География");
+        
     }
+    
 }
 
 

@@ -1,10 +1,5 @@
 ﻿using OOP7Dz.Entity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using OOP7Dz.View;
 namespace OOP7Dz.Model
 {
     public class Teacher : Person, Skill
@@ -20,7 +15,9 @@ namespace OOP7Dz.Model
 
         public void printSkill()
         {
-            Console.WriteLine("Меня зовут " + base.Name + ". Я учитель " + this.lesson.ToString());
+            
+            Console.WriteLine("Меня зовут " + base.Name + ". Мой придмет " + Print.PrintLesson(this.lesson));
         }
+
     }
 }
