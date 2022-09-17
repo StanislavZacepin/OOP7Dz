@@ -23,11 +23,7 @@ namespace OOP7Dz.Model
         public Teacher Teacher { get => teacher; set => teacher = value; }
         public Lesson Lesson { get => lesson; set => lesson = value; }
         public List<Student> Students { get => students; set => students = value; }
-
-        public void UpdateClassLessonTeacher(Teacher teacher)
-        {
-            this.teacher = teacher;
-        }
+               
 
     }
 }
