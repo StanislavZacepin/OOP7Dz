@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP7Dz.Entity
 {
-    internal interface Skill
+    public interface Skill
     {
         void printSkill();
     }
