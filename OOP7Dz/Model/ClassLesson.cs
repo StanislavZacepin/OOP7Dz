@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OOP7Dz.Model
 {
-    internal class ClassLesson
+    public class ClassLesson
     {
         private Teacher teacher;
         private Lesson lesson;
