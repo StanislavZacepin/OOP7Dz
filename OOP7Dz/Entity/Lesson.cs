@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OOP7Dz.Entity
+﻿namespace OOP7Dz.Entity
 {
     public enum Lesson
     {
@@ -12,7 +6,8 @@ namespace OOP7Dz.Entity
         Russian,//("Русский"),
         Gymnastics,//("Гимнастика"),
         History,//("История"),
-        Geography,//("География");
+        Geography//("География");
+
     }
 }
 
